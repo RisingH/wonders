@@ -5,5 +5,3 @@
 适配各种分辨率屏幕（包括移动端）
 
 传送门：https://risingh.github.io/wonders/index.html
-
-lalala
