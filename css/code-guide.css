@@ -209,15 +209,15 @@ pre code span {
   font-size: 3rem;
   margin: 0 .5rem;
 }
-.masthead-links {
+.masthead_links {
   font-size: 2rem;
 }
-.masthead-links a {
+.masthead_links a {
   color: rgba(255,255,255,.5);
   text-decoration: none;
   transition: all .15s linear;
 }
-.masthead-links a:hover {
+.masthead_links a:hover {
   color: #fff;
 }
 
@@ -262,11 +262,11 @@ pre code span {
   margin-bottom: .5rem;
 }
 
-.quick-links {
+.quick_links {
   list-style: none;
   margin-left: 0;
 }
-.quick-links li {
+.quick_links li {
   display: inline;
 }
 
@@ -460,3 +460,13 @@ input.button100.btn_color4 { background: #dedede; color: #aaa; border-color: #de
 .table_yellow th.title_bar { background:#e67e22; border:1px solid #d37019;}
 .table_statis td{color:#272727;border:1px solid #e3e3e3;}
 .table_statis td.bold{width:28%;font-weight:bold;text-align:center;}
+
+/*---------日历插件---------*/
+input.input_time { background: url(../images/icon_calendar.png) no-repeat right center; }
+
+/*---------滚动条插件---------*/
+.scroll_mh { height: 200px; overflow: hidden; background-color: #f1f1f1; padding: 20px;}
+
+/*---------返回顶部---------*/
+.ui_bar { position: fixed; width: 50px; height: 40px; bottom: 80px; right: 40px; display: none;}
+.ui_bar_top { width: 40px; height: 40px; border-radius: 3px; vertical-align: middle; display: block; transition: all 0.4s; background: url(../images/esc_index.png) no-repeat; background-position: 0 0; font-size: 14px; color: #fff; line-height: 18px; text-align: center;}

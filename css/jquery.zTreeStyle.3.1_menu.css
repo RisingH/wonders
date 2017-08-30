@@ -10,8 +10,8 @@ website:	http://code.google.com/p/jquerytree/
 
 
 .left_menu { width: 200px; background: #4297e5;}
-.left_menu dl dt { height:40px; text-align: center; background:url(../images/menu_bg1.png) no-repeat; font:bold 14px/40px Simsun; color:#fff; cursor:pointer; }
-.left_menu dl dt.current { background:url(../images/menu_bg1.png) no-repeat;}
+.left_menu dl dt { height:40px; text-align: center; font:bold 14px/40px Simsun; color:#fff; cursor:pointer; }
+.left_menu dl dt.current {}
 
 /*  以常见带图标的菜单栏（纯z-tree生成）为例
   --------------------------------*/
@@ -28,10 +28,10 @@ website:	http://code.google.com/p/jquerytree/
 .ztree li{padding:0; margin:0; list-style:none; white-space:nowrap; position: relative; border-bottom: 1px solid #3486d1; border-top: 1px solid #50a2ed;}
 
 /*---一级菜单横条样式---*/
-.ztree li a { margin:0; cursor:pointer; height:40px; padding-left:20px;line-height:40px; background: url(../images/line_ss.png) bottom left no-repeat; color:#fff; text-decoration:none; vertical-align:middle; display:block; }
+.ztree li a { margin:0; cursor:pointer; height:40px; padding-left:20px;line-height:40px; color:#fff; text-decoration:none; vertical-align:middle; display:block; }
 
 /*---二级菜单（二级菜单横条+二级菜单背景）---*/
-.ztree li ul.level0{ background:url(../images/menu_second.png) repeat-y; }
+.ztree li ul.level0{  }
 
 /* .ztree li level0{ background:url(../images/menu_second.png) repeat-y; } */
 
@@ -50,7 +50,7 @@ website:	http://code.google.com/p/jquerytree/
 
 .ztree li ul li{line-height:30px; background: #70b4f3; border-bottom: 1px dashed #b9daf9;border-top-color:#70b4f3;}
 .ztree li ul li:last-child { border-bottom: none;}
-.ztree li ul li a{padding:0 0 0 40px;height:36px;line-height:36px;color:#000;border-top:none;border-bottom:none;background:url(../images/dot_small.png) no-repeat 30px center;}
+.ztree li ul li a{padding:0 0 0 40px;height:36px;line-height:36px;color:#000;border-top:none;border-bottom:none;}
 .ztree li ul li a:hover { background: #70b4f3;}
 /* .ztree li ul li a:hover{padding:0 0 0 20px;height:30px;line-height:30px;background-color:#fff;border-top:none;border-bottom:none;color:#338afb;} */
 .ztree li ul li a.curSelectedNode {padding-top:0px;background:none;color:#5d97d4;background:#dbe9f7; }

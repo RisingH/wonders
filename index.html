@@ -19,16 +19,17 @@
 		<header class="masthead">
 			<div class="container">
 				<!--<span class="icon" style="color: #666;">&#9997;</span>-->
-				<h1>前端规范 by @Hug Ln Bn</h1>
-				<p class="lead">编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。</p>
+				<h1>前端规范 </h1>
+				<p class="lead">编写@hug ln bn</p>
+				<p class="lead">万达信息前端规范、企服内部框架组件说明</p>
 
-				<p class="masthead-links">
+				<p class="masthead_links">
 					<a href="https://github.com/RisingH/wonders/tree/master">
 						<span class="icon icon-github-circled"></span>
 					</a>
-					<a href="https://twitter.com/mdo">
+					<!--<a href="https://twitter.com/mdo">
 						<span class="icon icon-twitter"></span>
-					</a>
+					</a>-->
 				</p>
 
 			</div>
@@ -1645,72 +1646,73 @@ input.button100.btn_color1:hover {
 		<div class="section" id="wonder_recommend">
 			<div class="col">
 			    <h3>常用Jquery插件推荐</h3>
-			    <p>日历插件：          
+			    <p class="m_top">日历插件：
+			    	<p class="p_color">
+			        	插件文档地址：<a href="http://sentsin.com/layui/laydate"  target="_blank">http://sentsin.com/layui/laydate</a> <br />
+			        	示例：
+			       </p>
 			    </p>
-			    <div class="content_a content_mid">
-			         <ul class="group_btn">
-			         	<li><input type="submit" value="查询" class="button100 btn_color1"/></li>
-			         	<li><input type="button" value="确认" class="button100 btn_color2"/></li>
-			         	<li><input type="button" value="默认" class="button100 btn_color3"/></li>
-			         	<li><input type="button" value="禁用" class="button100 btn_color4"/></li>
+			    <div class="content_a" style="height: auto;">
+			         <ul class="group_input">
+			         	<li>
+			         		日历：&nbsp;
+			         		<input type="text" style="width: 200px;" class="input_time input_cc"  id="laydate_xz1" onclick="laydate({elem:'#laydate_xz1'})"  />
+			         	</li>
 			         </ul>
 				</div>
-			    <p>框架中带有自定义的按钮，类名分别是<code>button50</code>、<code>button80</code>、<code>button100</code>、<code>button130</code>，类名中的数字代表了他们的宽   
-			       <p class="p_color">
-			        	解释：更改框架按钮的时候，按照框架的按钮原命名进行样式更改效率更高。
-			       </p>          
+				<p class="m_top">滚动条插件：
+			    	<p class="p_color">
+			        	插件使用可参考：<a href="http://blog.sina.com.cn/s/blog_6a8557730102vig8.html"  target="_blank">nicescroll插件使用</a> <br />
+			        	示例：
+			       </p>
 			    </p>
+			    <div class="content_a scroll_mh">
+                    <h4>滚动条插件介绍</h4>
+                    <p>1、<code>Nicescroll</code> 是制作自定义滚动条的jq插件</p>
+                    <p>2、支持div,iframe,html等使用,兼容IE7-8,safari,firefox,webkit内核浏览器(chrome,safari)以及智能终端设备浏览器的滚动条。</p>
+                    <p>3、引用<code>jquery.js</code>和<code>jquery.nicescroll.js</code></p>
+                    <p>4、通过jquery获取需要添加滚动条的元素，调用<code>niceScroll</code>函数进行配置即可使用该插件</p>
+				</div>
 			</div>
-			
 			<div class="col">
 				<figure class="highlight">
 					<pre>
-						<code class="language-css" data-lang="css">
-/*--宽100的按钮--*/
-input.button100 { 
-	width: 100px; 
-	height: 30px; 
-	line-height: 30px; 
-	color: #1889f3; 
-	background: transparent; 
-	border:1px solid #1889f3; 
-	border-radius:3px ; 
-	cursor: pointer; 
-	}
-	
-input.button100:hover { 
-	background: #1771f2; 
-	color: #fff; 
-	border-color: #1771f2; 
-	}
-	
-/*--宽100的颜色按钮示例--*/
-input.button100.btn_color1 { 
-	background: #1889f3; 
-	color: #fff; 
-	border-color: #1889f3;  
-	}
-input.button100.btn_color1:hover { 
-	background: #1771f2; 
-	color: #fff; 
-	border-color: #1771f2; 
-	}
+						<code class="language-javascript" data-lang="javascript">
+/*---------滚动条调用展示---------*/
+$(document).ready(function() {
+
+  $('.scroll_mh').niceScroll({
+        cursorcolor: "#000",// 光标颜色
+        cursoropacitymax: 0.2, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+        touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+        cursorwidth: "6px", //像素光标的宽度
+        cursorborder: "0", // 	游标边框css定义
+        cursorborderradius: "6px",//以像素为光标边界半径
+        autohidemode: true, //是否隐藏滚动条
+        hwacceleration: true
+    });
+});
+
+
 					  </code>
 					</pre>
 				</figure>
-			</div>
+			</div>			
 		</div>
-
+        
+        <div class="ui_bar" id="top_sec">
+			<a class="ui_bar_top" id="go_page_top" title="返回顶部"></a>
+		</div>
 
 		<footer class="footer">
 			<p>Heavily inspired by
 				<a href="https://github.com/necolas/idiomatic-css">Idiomatic CSS</a> and the
 				<a href="http://github.com/styleguide">GitHub Styleguide</a>. Made with all the love in the world by
-				<a href="https://twitter.com/mdo">@Hug Ln Bn</a>.</p>
+				<a href="https://weibo.com/u/2870076252/home?wvr=5">@Hug Ln Bn</a>.</p>
 			<p>Open sourced under MIT. Copyright 2017
-				<a href="https://twitter.com/mdo">@Hug Ln Bn</a>.</p>
+				<a href="https://weibo.com/u/2870076252/home?wvr=5">@Hug Ln Bn</a>.</p>
 			<p>由
-				<a href="http://www.bootcss.com/">万达信息</a>整理</p>
+				<a href="http://www.wondersgroup.com/">万达信息</a>整理</p>
 			<p>最后更新时间：2017-08-23</p>
 
 			<ul class="quick_links">
@@ -1721,13 +1723,44 @@ input.button100.btn_color1:hover {
 		</footer>
 
         <script src="js/jquery-1.9.1.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/laydate/laydate.js"></script>
+		<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
 		<script src="js/highlight.pack.js" charset="utf-8"></script>
         <script>
         	$(document).ready(function() {
 			  $('pre code').each(function(i, block) {
 			    hljs.highlightBlock(block);
 			  });
+			  $('.scroll_mh').niceScroll({
+			        cursorcolor: "#000",// 光标颜色
+			        cursoropacitymax: 0.2, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+			        touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+			        cursorwidth: "6px", //像素光标的宽度
+			        cursorborder: "0", // 	游标边框css定义
+			        cursorborderradius: "6px",//以像素为光标边界半径
+			        autohidemode: true, //是否隐藏滚动条
+			        hwacceleration: true
+			   });
+  
 			});
+			
+			$(window).scroll(function() {
+			      /* 判断滚动条 距离页面顶部的距离 100可以自定义*/
+			      if($(window).scrollTop() > 100) {
+			       $("#top_sec").fadeIn(100); 
+			      } else {
+			       $("#top_sec").fadeOut(100);
+			      }
+			     });
+		    /* 给图片元素绑定 回到顶部的事件 */
+		    $(function() {
+		     $("#go_page_top").on("click", function() {
+		      $('body,html').animate({
+		       scrollTop: 0
+		      }, 1000);
+		      return false;
+		     });
+		    });
 //          hljs.initHighlightingOnLoad();
         </script>
 	</body>
